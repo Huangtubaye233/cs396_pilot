@@ -4,7 +4,7 @@ import sys
 import subprocess
 from pathlib import Path
 
-DEFAULT_CACHE_DIR = Path("/projects/b1170/users/kyx8046/hf-cache")
+DEFAULT_CACHE_DIR = Path(__file__).resolve().parent / "models"
 DEFAULT_CACHE_DIR.mkdir(parents=True, exist_ok=True)
 os.environ.setdefault("HF_HOME", str(DEFAULT_CACHE_DIR))
 os.environ.setdefault("TRANSFORMERS_CACHE", str(DEFAULT_CACHE_DIR))
