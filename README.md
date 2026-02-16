@@ -23,4 +23,3 @@
 
 ## Notes
 - Output and debug files are written under `results/` by default.
-# cs396_pilot
